@@ -31,7 +31,7 @@
 
   <body>
     <header id="nav">
-      <nav class="navbar navbar-expand bg-body-tertiary sticky-top">
+      <nav class="navbar navbar-expand bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -95,8 +95,344 @@
       </nav>
     </header>
 
-    <main>
+    <main class="d-flex overflow-x-hidden">
       <!-- COLONNA SINISTRA -->
+      <div
+        class="p-3 d-flex justify-content-between flex-column align-items-center"
+        id="sidebar"
+      >
+        <div class="top-side">
+          <button class="btn text-white">
+            <span class="d-block d-flex align-items-center"
+              ><i class="fa-solid fa-house fs-5 align-items-center"></i>
+              <span class="fw-semibold d-none d-md-inline">Home</span></span
+            ></button
+          ><button class="btn text-white">
+            <span class="d-block d-flex align-items-center"
+              ><i class="fa-solid fa-chart-simple fs-5 align-items-center"></i>
+              <span class="fw-semibold d-none d-md-inline">Stats</span></span
+            ></button
+          ><button class="btn text-white">
+            <span class="d-block d-flex align-items-center"
+              ><i class="fa-solid fa-signal fs-5 align-items-center"></i>
+              <span class="fw-semibold d-none d-md-inline">Signal</span></span
+            >
+          </button>
+        </div>
+        <div class="bot-side">
+          <button class="btn text-white">
+            <span class="d-block d-flex align-items-center"
+              ><i class="fa-solid fa-gear fs-5 align-items-center"></i>
+              <span class="fw-semibold d-none d-md-inline">Admin</span></span
+            >
+          </button>
+        </div>
+      </div>
+
+      <section id="content">
+        <div class="overflow-x-hidden overflow-y-scroll over">
+          <!-- CARDS -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-fluid col-md-8" id="classes">
+                <div class="card">
+                  <div class="card-header">
+                    <h2>Prossime classi</h2>
+                  </div>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Data Inizio</th>
+                        <th scope="col">ROI</th>
+                        <th scope="col">Stato</th>
+                        <th scope="col">Azioni</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- RIGA -->
+                      <tr>
+                        <td>
+                          <span>
+                            <span class="d-inline-block">
+                              <a
+                                href="#"
+                                class="badge rounded-circle d-flex justify-content-center align-items-center d-inline-block profile-icon me-2"
+                                ><i class="bi bi-code-slash fs-6"></i></a
+                            ></span>
+                            Nome Cognome</span
+                          >
+                        </td>
+                        <td>10 Febbraio 2021</td>
+                        <td>20%</td>
+                        <td>
+                          <span class="badge rounded-pill text-bg-success"
+                            >Done</span
+                          >
+                        </td>
+                        <td>
+                          <button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-pencil"></i></button
+                          ><button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- RIGA -->
+                      <tr>
+                        <td>
+                          <span>
+                            <span class="d-inline-block">
+                              <a
+                                href="#"
+                                class="badge rounded-circle d-flex justify-content-center align-items-center d-inline-block profile-icon me-2"
+                                ><i class="bi bi-code-slash fs-6"></i></a
+                            ></span>
+                            Nome Cognome</span
+                          >
+                        </td>
+                        <td>10 Febbraio 2021</td>
+                        <td>20%</td>
+                        <td>
+                          <span class="badge rounded-pill text-bg-success"
+                            >Done</span
+                          >
+                        </td>
+                        <td>
+                          <button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-pencil"></i></button
+                          ><button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- RIGA -->
+                      <tr>
+                        <td>
+                          <span>
+                            <span class="d-inline-block">
+                              <a
+                                href="#"
+                                class="badge rounded-circle d-flex justify-content-center align-items-center d-inline-block profile-icon me-2"
+                                ><i class="bi bi-code-slash fs-6"></i></a
+                            ></span>
+                            Nome Cognome</span
+                          >
+                        </td>
+                        <td>10 Febbraio 2021</td>
+                        <td>20%</td>
+                        <td>
+                          <span
+                            class="badge rounded-pill text-bg-warning text-white"
+                            >Process</span
+                          >
+                        </td>
+                        <td>
+                          <button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-pencil"></i></button
+                          ><button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- RIGA -->
+                      <tr>
+                        <td>
+                          <span>
+                            <span class="d-inline-block">
+                              <a
+                                href="#"
+                                class="badge rounded-circle d-flex justify-content-center align-items-center d-inline-block profile-icon me-2"
+                                ><i class="bi bi-code-slash fs-6"></i></a
+                            ></span>
+                            Nome Cognome</span
+                          >
+                        </td>
+                        <td>10 Febbraio 2021</td>
+                        <td>20%</td>
+                        <td>
+                          <span class="badge rounded-pill text-bg-success"
+                            >Done</span
+                          >
+                        </td>
+                        <td>
+                          <button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-pencil"></i></button
+                          ><button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- RIGA -->
+                      <tr>
+                        <td>
+                          <span>
+                            <span class="d-inline-block">
+                              <a
+                                href="#"
+                                class="badge rounded-circle d-flex justify-content-center align-items-center d-inline-block profile-icon me-2"
+                                ><i class="bi bi-code-slash fs-6"></i></a
+                            ></span>
+                            Nome Cognome</span
+                          >
+                        </td>
+                        <td>10 Febbraio 2021</td>
+                        <td>20%</td>
+                        <td>
+                          <span class="badge rounded-pill text-bg-danger"
+                            >Failed</span
+                          >
+                        </td>
+                        <td>
+                          <button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-pencil"></i></button
+                          ><button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- RIGA -->
+                      <tr>
+                        <td>
+                          <span>
+                            <span class="d-inline-block">
+                              <a
+                                href="#"
+                                class="badge rounded-circle d-flex justify-content-center align-items-center d-inline-block profile-icon me-2"
+                                ><i class="bi bi-code-slash fs-6"></i></a
+                            ></span>
+                            Nome Cognome</span
+                          >
+                        </td>
+                        <td>10 Febbraio 2021</td>
+                        <td>20%</td>
+                        <td>
+                          <span class="badge rounded-pill text-bg-success"
+                            >Done</span
+                          >
+                        </td>
+                        <td>
+                          <button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-pencil"></i></button
+                          ><button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- RIGA -->
+                      <tr>
+                        <td>
+                          <span>
+                            <span class="d-inline-block">
+                              <a
+                                href="#"
+                                class="badge rounded-circle d-flex justify-content-center align-items-center d-inline-block profile-icon me-2"
+                                ><i class="bi bi-code-slash fs-6"></i></a
+                            ></span>
+                            Nome Cognome</span
+                          >
+                        </td>
+                        <td>10 Febbraio 2021</td>
+                        <td>20%</td>
+                        <td>
+                          <span class="badge rounded-pill text-bg-danger"
+                            >Failed</span
+                          >
+                        </td>
+                        <td>
+                          <button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-pencil"></i></button
+                          ><button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <!-- RIGA -->
+                      <tr>
+                        <td>
+                          <span>
+                            <span class="d-inline-block">
+                              <a
+                                href="#"
+                                class="badge rounded-circle d-flex justify-content-center align-items-center d-inline-block profile-icon me-2"
+                                ><i class="bi bi-code-slash fs-6"></i></a
+                            ></span>
+                            Nome Cognome</span
+                          >
+                        </td>
+                        <td>10 Febbraio 2021</td>
+                        <td>20%</td>
+                        <td>
+                          <span class="badge rounded-pill text-bg-success"
+                            >Done</span
+                          >
+                        </td>
+                        <td>
+                          <button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-pencil"></i></button
+                          ><button
+                            type="button"
+                            class="btn btn-outline-dark mx-2"
+                          >
+                            <i class="bi bi-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-fluid col-md-6"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- BOOTSTRAP SCRIPT -->

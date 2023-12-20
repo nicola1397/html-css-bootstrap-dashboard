@@ -2,6 +2,7 @@
   margin-left: -40px;
 }
 
+/* NAV */
 .icon-yellow {
   color: orange;
 }
@@ -25,4 +26,53 @@
 
 #nav .form-control {
   padding-left: 2.375rem;
+}
+
+/* MAIN */
+
+main {
+  height: calc(100vh - 56px);
+}
+
+/* SIDEBAR */
+
+#sidebar {
+  color: white;
+  width: 150px;
+  height: 100%;
+  background-image: url(./img/sidebar-bg.png);
+  background-color: #061e34;
+}
+
+#sidebar i {
+  width: 40px;
+}
+
+/* CONTENT */
+
+#content {
+  width: 100%;
+}
+
+/* TABELLA CLASSI */
+#classes .profile-icon {
+  background-color: #f26551;
+  width: 30px;
+  height: 30px;
+}
+
+#classes tr {
+  vertical-align: middle;
+}
+
+#classes td:not(:first-child),
+#classes th:not(:first-child) {
+  text-align: center;
+}
+/* MEDIA QUERY */
+
+@media screen and (max-width: 768px) {
+  #sidebar {
+    width: 70px;
+  }
 }
