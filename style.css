@@ -48,6 +48,7 @@ main {
 
 #content {
   width: 100%;
+  height: calc(100vh - 56px);
 }
 
 /* TABELLA CLASSI */
@@ -66,12 +67,25 @@ main {
   text-align: center;
 }
 
-#classes 
+#classes tr *:nth-child(2),
+#classes tr *:nth-child(3) {
+  display: none;
+}
+
+/* CARD UTENTI */
+#utenti li img {
+  width: 100%;
+}
 
 /* MEDIA QUERY */
 
 @media screen and (max-width: 768px) {
   #sidebar {
     width: 70px;
+  }
+
+  #classes tr *:nth-child(2),
+  #classes tr *:nth-child(3) {
+    display: table-cell;
   }
 }
