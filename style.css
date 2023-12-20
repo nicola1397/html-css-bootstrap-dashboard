@@ -1,7 +1,3 @@
-.ms-n5 {
-  margin-left: -40px;
-}
-
 /* NAV */
 .icon-yellow {
   color: orange;
@@ -69,6 +65,9 @@ main {
 #classes th:not(:first-child) {
   text-align: center;
 }
+
+#classes 
+
 /* MEDIA QUERY */
 
 @media screen and (max-width: 768px) {
