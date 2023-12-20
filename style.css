@@ -34,7 +34,7 @@ main {
 
 #sidebar {
   color: white;
-  width: 150px;
+  width: 70px;
   height: 100%;
   background-image: url(./img/sidebar-bg.png);
   background-color: #061e34;
@@ -49,6 +49,12 @@ main {
 #content {
   width: 100%;
   height: calc(100vh - 56px);
+}
+
+/* BARRA BLU */
+
+.blue-bar {
+  background-color: #1d72e8;
 }
 
 /* TABELLA CLASSI */
@@ -79,9 +85,9 @@ main {
 
 /* MEDIA QUERY */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   #sidebar {
-    width: 70px;
+    width: 150px;
   }
 
   #classes tr *:nth-child(2),
