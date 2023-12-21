@@ -40,8 +40,8 @@ main {
   background-color: #061e34;
 }
 
-#sidebar i {
-  width: 40px;
+#sidebar button .nav-icon {
+  width: 30px;
 }
 
 /* CONTENT */
