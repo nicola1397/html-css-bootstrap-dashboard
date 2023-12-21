@@ -83,15 +83,32 @@ main {
   width: 100%;
 }
 
+/* OFFCANVAS */
+
+#offcanvasRight {
+  width: 100vw;
+}
+
 /* MEDIA QUERY */
 
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
   #sidebar {
     width: 150px;
   }
 
-  #classes tr *:nth-child(2),
   #classes tr *:nth-child(3) {
+    display: table-cell;
+  }
+}
+
+@media all and (min-width: 992px) {
+  #offcanvasRight {
+    width: 50vw;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #classes tr *:nth-child(2) {
     display: table-cell;
   }
 }

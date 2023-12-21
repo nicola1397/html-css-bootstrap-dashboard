@@ -177,7 +177,7 @@
                 <span>Nuovo Studente</span>
                 <!-- OFFCANVAS -->
                 <button
-                  class="btn btn-outline-light fs-"
+                  class="btn btn-outline-light ms-2"
                   type="button"
                   data-bs-toggle="offcanvas"
                   data-bs-target="#offcanvasRight"
@@ -187,7 +187,7 @@
                 </button>
 
                 <div
-                  class="offcanvas offcanvas-end w-50"
+                  class="offcanvas offcanvas-end offcanvas-width"
                   tabindex="-1"
                   id="offcanvasRight"
                   aria-labelledby="offcanvasRightLabel"
@@ -206,55 +206,63 @@
                   </div>
                   <div class="offcanvas-body">
                     <!-- CONTENUTO OFFCANVAS -->
-                    <div class="mb-3 row">
-                      <form>
+                    <form
+                      action="https://learning.tizianonicolai.com/request-catcher/"
+                      method="GET"
+                      target="_blank"
+                    >
+                      <div class="mb-3 row text-start">
                         <!-- NOME -->
-                        <div class="col-6">
+                        <div class="col-12 col-md-6 mb-2">
                           <label for="inlineFormInputGroup">Nome</label>
 
                           <input
                             type="text"
                             class="form-control"
                             id="inlineFormInputGroup"
+                            name="Nome"
                           />
                         </div>
                         <!-- COGNOME -->
-                        <div class="col-6">
+                        <div class="col-12 col-md-6 mb-2">
                           <label for="inlineFormInputGroup">Cognome</label>
 
                           <input
                             type="text"
                             class="form-control"
                             id="inlineFormInputGroup"
+                            name="Cognome"
                           />
                         </div>
                         <!-- EMAIL -->
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                           <label for="inlineFormInputGroup">Email</label>
                           <div class="input-group mb-2">
                             <div class="input-group-prepend">
                               <div class="input-group-text">@</div>
                             </div>
                             <input
-                              type="text"
+                              type="email"
                               class="form-control"
                               id="inlineFormInputGroup"
+                              name="email"
                             />
                           </div>
                         </div>
 
                         <!-- Password -->
-                        <div class="col-6">
+                        <div class="col-12 col-md-6 mb-2">
                           <label for="inlineFormInputGroup">Password</label>
 
                           <input
                             type="password"
                             class="form-control"
                             id="inlineFormInputGroup"
+                            name="Password"
                           />
                         </div>
                         <!-- EMAIL -->
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                           <label for="inlineFormInputGroup"
                             >Indirizzo Email</label
                           >
@@ -263,70 +271,81 @@
                               <div class="input-group-text">@</div>
                             </div>
                             <input
-                              type="text"
+                              type="email2"
                               class="form-control"
                               id="inlineFormInputGroup"
+                              name="email2"
                             />
                           </div>
                         </div>
                         <!-- Password -->
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                           <label for="inlineFormInputGroup">Password</label>
 
                           <input
                             type="password"
                             class="form-control"
                             id="inlineFormInputGroup"
+                            name="Password2"
                           />
                         </div>
                         <!-- INDIRIZZO -->
-                        <div class="form-group">
+                        <div class="form-group mb-2">
                           <label for="inputAddress">Indirizzo</label>
                           <input
                             type="text"
                             class="form-control"
                             id="inputAddress"
+                            name="Indirizzo"
                           />
                         </div>
-                        <div class="form-row">
-                          <div class="form-group col-md-6">
-                            <label for="inputCity">Città</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputCity"
-                            />
-                          </div>
-                          <div class="form-group col-md-4">
-                            <label for="inputState">Stato</label>
-                            <select id="inputState" class="form-control">
-                              <option selected>Scegli...</option>
-                              <option>Italia</option>
-                            </select>
-                          </div>
-                          <div class="form-group col-md-2">
-                            <label for="inputZip">Cap</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputZip"
-                            />
-                          </div>
+
+                        <div class="form-group col-12 col-md-6 mb-2">
+                          <label for="inputCity">Città</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="inputCity"
+                            name="Città"
+                          />
                         </div>
+                        <div class="form-group col-12 col-md-4 mb-2">
+                          <label for="inputState">Stato</label>
+                          <select
+                            id="inputState"
+                            class="form-control"
+                            name="Stato"
+                          >
+                            <option selected>Scegli...</option>
+                            <option>Italia</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-12 col-md-2 mb-2">
+                          <label for="inputZip">Cap</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="inputZip"
+                            name="CAP"
+                          />
+                        </div>
+
                         <div class="mb-3">
                           <label for="formFile" class="form-label">Foto</label>
                           <input
                             class="form-control"
                             type="file"
                             id="formFile"
+                            name="Foto"
                           />
                         </div>
-                        <div class="form-group">
+                        <div class="form-group mb-4">
                           <div class="form-check">
                             <input
                               class="form-check-input"
                               type="checkbox"
                               id="gridCheck"
+                              name="Conferma"
                             />
                             <label class="form-check-label" for="gridCheck">
                               Seleziona per proseguire</label
@@ -336,12 +355,18 @@
                         <!-- SUBMIT BUTTON -->
                         <div class="col-auto">
                           <button class="btn btn-primary" type="submit">
-                            Submit form
+                            Salva
                           </button>
                         </div>
-                        <!-- FINE FORM -->
-                      </form>
-                    </div>
+                        <!-- RESET BUTTON -->
+                        <div class="col-auto">
+                          <button class="btn btn-warning" type="reset">
+                            Svuota
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    <!-- FINE FORM -->
                   </div>
                 </div>
               </div>
@@ -350,7 +375,7 @@
 
           <!-- CARDS -->
           <div class="container-fluid">
-            <div class="row pt-3 overflow-x-hidden">
+            <div class="row py-3 overflow-x-hidden">
               <div class="col-fluid col-md-8" id="classes">
                 <!-- PROSSIME CLASSI -->
                 <div class="card mb-4">
